@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    app:cardCornerRadius="10dp"
+    android:layout_marginHorizontal="32dp"
+    android:background="@color/white"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/correct_x_in_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:text="Correct:"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            />
+
+
+        <TextView
+            android:id="@+id/text_correct_in_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/correct_x_in_dialog"
+            android:text="15"
+            android:layout_marginTop="16dp"
+            />
+
+
+        <TextView
+            android:id="@+id/wrong_x_in_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:text="Wrong:"
+            android:layout_marginStart="16dp"
+            android:layout_below="@+id/correct_x_in_dialog"
+            android:layout_marginTop="16dp"
+            />
+
+
+        <TextView
+            android:id="@+id/text_wrong_in_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/wrong_x_in_dialog"
+            android:layout_below="@+id/text_correct_in_dialog"
+            android:text="15"
+            android:layout_marginTop="16dp"
+            />
+
+
+        <TextView
+            android:id="@+id/skip_x_in_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:text="Skipped: "
+            android:layout_marginStart="16dp"
+            android:layout_below="@+id/wrong_x_in_dialog"
+            android:layout_marginTop="16dp"
+            />
+
+
+        <TextView
+            android:id="@+id/text_skip_in_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/skip_x_in_dialog"
+            android:layout_below="@+id/text_wrong_in_dialog"
+            android:text="15"
+            android:layout_marginTop="16dp"
+            />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_new_test_in_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_skip_background"
+            android:text="New test"
+            android:layout_below="@+id/text_skip_in_dialog"
+            android:layout_centerHorizontal="true"
+            android:paddingHorizontal="24dp"
+            android:textAllCaps="false"
+            android:layout_marginBottom="16dp"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
